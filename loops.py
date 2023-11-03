@@ -28,7 +28,7 @@ for skill in mySkills:
     print(f"my progress in language {skill} programming = {mySkills[skill]}")
  """
 
-students ={
+""" students ={
     "Walid":{
         "C"     : "95%",
         "C++"   : "80%",
@@ -56,11 +56,45 @@ for student in students:
     for skill in students[student]:
 
         print(f"-{skill} with progress= {students[student][skill]}")
+    print("="*80) """
+
+
+
+##############################
+# Words with loops 
+
+# 1) Break    ==> will end the loop
+# 2) continue ==> will skip the code under it for one iteration
+# 3) pass     ==> will make compiler pass anything u didn't implement yet 
+#############################
+
+
+students ={
+    "Walid":{
+        "C"     : "95%",
+        "C++"   : "80%",
+        "python": "90%"
+    },
+    "karem":
+    {
+        "Cloud"  : "95%",
+        "Backend": "90%",
+        "docker" : "80%"
+    },
+    "Mohamed":
+    {
+        "python" : "90%",
+        "HTML"   : "95%",
+        "CSS"    : "95%"
+    }
+}
+
+print("="*80)
+
+for student,skills in students.items():
+    print(f"The skills of {student} Are: ")
+
+    for skill,progress in skills.items() :
+
+        print(f"-{skill} with progress= {progress}")
     print("="*80)
-
-
-
-
-
-
-
