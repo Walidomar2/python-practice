@@ -74,24 +74,23 @@ print(arr[leng - 3])
  """
 
 n = int(input())
-    arr = map(int, input().split())
+arr = map(int, input().split())
     
-    arr = list(arr)
-    arr.sort(reverse = True)
+arr = list(arr)
+arr.sort(reverse = True)
     
-    index = 1
+index = 1
    
-    for i in range(n - 1):  # Iterate up to the second-to-last element
-        current_element = arr[i]
-        next_element = arr[i + 1]
+for i in range(n - 1):  # Iterate up to the second-to-last element
+    current_element = arr[i]
+    next_element = arr[i + 1]
         
-        if current_element == next_element:
-            index +=1
-        else:
-            break;
+    if current_element == next_element:
+        index +=1
+    else:
+        break;
         
-
-    print(arr[index])    
+print(arr[index])    
             
 
     
