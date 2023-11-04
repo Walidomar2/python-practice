@@ -54,12 +54,46 @@ print(cleanWord("wwwwwwwwooooooooooooorldddddddddd")) """
 
 #name ="walid"
 
-hello = lambda name: f"hello {name}"
+""" hello = lambda name: f"hello {name}"
 
 print(hello("Walid"))
 
+list_1=[1,2,3]
+list_2 =[list_1]
 
+list_2.append(list_1)
+print(list_2)
+ """
+""" n = int(input())
+arr = map(int, input().split())
+    
+arr = list(arr)
+arr.sort()
+leng = len(arr)    
+print(arr[leng - 3])
+ """
 
+n = int(input())
+    arr = map(int, input().split())
+    
+    arr = list(arr)
+    arr.sort(reverse = True)
+    
+    index = 1
+   
+    for i in range(n - 1):  # Iterate up to the second-to-last element
+        current_element = arr[i]
+        next_element = arr[i + 1]
+        
+        if current_element == next_element:
+            index +=1
+        else:
+            break;
+        
 
+    print(arr[index])    
+            
+
+    
 
 
