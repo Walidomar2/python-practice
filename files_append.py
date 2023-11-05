@@ -25,9 +25,9 @@ tempList.append(5.2)
 
 resultList.append(tempList)
 
-
-
 print(resultList)
+
+
 
 
 
