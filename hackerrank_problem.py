@@ -1,7 +1,7 @@
 if __name__ == '__main__':
     resultList = []
 
-    for _ in range(int(input())):
+    for _ in range(int(input("Enter"))):
         tempList = []  # Create a new tempList for each iteration
         name = input()  # Enter a name
         score = float(input())  # Enter a score

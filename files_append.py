@@ -28,6 +28,9 @@ resultList.append(tempList)
 print(resultList)
 
 
+# tell()   ==> position of cursor
+# truncate()
+# seek(pos) ==>reading from a position u give
 
-
+# os.remove("path")  ==> you can remove the file from it
 
