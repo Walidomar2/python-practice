@@ -23,7 +23,11 @@ print(f"{randint(10,100)}")
 print(f"Random float number: {random()}")
  """
 
-import module_test
+""" import module_test
 
-module_test.sayHello("Walid")
+module_test.sayHello("Walid") """
+
+import pyfiglet , termcolor
+
+print(termcolor.colored(pyfiglet.figlet_format("Walid Omar"), color = 'yellow'))
 
