@@ -52,6 +52,8 @@ sayHelloIteration('walid')
 dic = {}
 list = [1,2,3,4,5,6,7]
 
-dic ["walid"] = list
+dic ["walid"] = list        # it will makes walid as key and the list as value
 
 print(dic['walid'])
+
+

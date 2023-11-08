@@ -29,5 +29,5 @@ module_test.sayHello("Walid") """
 
 import pyfiglet , termcolor
 
-print(termcolor.colored(pyfiglet.figlet_format("Walid Omar"), color = 'yellow'))
+print(termcolor.colored(pyfiglet.figlet_format("          WELCOME w.o"), color = 'yellow'))
 

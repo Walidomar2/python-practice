@@ -12,3 +12,5 @@ for item1,item2,item3,item4 in zip (list_1,list_2,tuple_1,dict_1):  #it will loo
     print(f"List 2 Item ==> {item2}")
     print(f"Tuple  Item ==> {item3}")
     print(f"Dictionary key == > {item4} With value {dict_1[item4]}")
+
+
