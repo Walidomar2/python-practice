@@ -1,6 +1,8 @@
 
 # 1) search() ==> return the first match only
 # 2) findall() ==> returns a list of all matches and empty list if no match
+# 3) split(pattern,string,maxsplit) ==> returns a list of elements splitted on each match
+# 4) sub(pattern,replace,string,replacecount) ==> replace matches with what you want 
 
 import re
 
@@ -72,12 +74,12 @@ my_string4 = "https://elzero.com/link.py"
 my_string5 = "http://www.elzero.net"
 my_string6 = "https://elzero.net"
 
-result1 = re.findall(r"((https?://)(www\.)?(\w+)(.com|.org)(:\d+)?(.+))", my_string1)
-result2 = re.findall(r"((https?://)(www\.)?(\w+)(.com|.org)(:\d+)?(.+))", my_string2)
-result3 = re.findall(r"((https?://)(www\.)?(\w+)(.com|.org)(:\d+)?(.+))", my_string3)
-result4 = re.findall(r"((https?://)(www\.)?(\w+)(.com|.org)(:\d+)?(.+))", my_string4)
-result5 = re.findall(r"((https?://)(www\.)?(\w+)(.com|.org)(:\d+)?(.+))", my_string5)
-result6 = re.findall(r"((https?://)(www\.)?(\w+)(.com|.org)(:\d+)?(.+))", my_string6)
+result1 = re.findall(r"((https?)://(www)?\.?(\w+)(.com|.org|.net):?(\d+)?(.+))", my_string1)
+result2 = re.findall(r"((https?)://(www)?\.?(\w+)(.com|.org|.net):?(\d+)?(.+))", my_string2)
+result3 = re.findall(r"((https?)://(www)?\.?(\w+)(.com|.org|.net):?(\d+)?(.+))", my_string3)
+result4 = re.findall(r"((https?)://(www)?\.?(\w+)(.com|.org|.net):?(\d+)?(.+))", my_string4)
+result5 = re.findall(r"((https?)://(www)?\.?(\w+)(.com|.org|.net):?(\d+)?(.+)?)", my_string5)
+result6 = re.findall(r"((https?)://(www)?\.?(\w+)(.com|.org|.net):?(\d+)?(.+)?)", my_string6)
 
 
 print(result1)
@@ -111,3 +113,24 @@ result = re.findall(r"(http\w?)", my_string)
 
 print(result)
 #['http', 'https']
+
+
+
+print("="*50)
+
+############################################################################
+# Split function
+
+myString = "I love python language"
+
+mySplitList = re.split(r"\s", myString, 2)
+
+print(mySplitList)      # ['I', 'love', 'python language']
+
+print("="* 50)
+
+############################################################################
+# sub function
+
+print(re.sub(r"\s","-",myString))   # I-love-python-language
+
