@@ -91,9 +91,9 @@ print(result3)
 print(result4)
 # ['https://elzero.com/link.py]
 print(result5)
-# []
+# [http://www.elzero.net]
 print(result6)
-# []
+# [https://elzero.net]
 
 print("="*50)
 
