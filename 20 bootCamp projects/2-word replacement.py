@@ -1,3 +1,11 @@
+####################################################################################
+# Author: Walid Omar
+# Brief: A Python script that takes a user input string and performs a word
+#        replacement. The user is prompted to enter a word in the given string
+#        that they want to replace and the replacement word. The script then
+#        prints the modified sentence with the specified replacement.
+####################################################################################
+
 
 str = input("Enter your string: ").strip()
 
