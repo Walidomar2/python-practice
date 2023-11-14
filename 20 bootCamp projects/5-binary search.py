@@ -19,10 +19,12 @@ def binarySearch(lis,number):
     rightIndex = len(lis) - 1
     leftIndex = 0
     midIndex = 0
-
+    steps = 0
     
     while leftIndex <= rightIndex:
-        midIndex = int((leftIndex + rightIndex) / 2)
+        print(f"step{steps}: {lis[leftIndex:rightIndex+1]}")
+        steps+=1
+        midIndex = (leftIndex + rightIndex) // 2
         
         if number == lis[midIndex]:
             return midIndex
