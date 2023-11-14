@@ -7,7 +7,7 @@ def wordReplacement(sentence):
     
     word = input("Enter the replacement word: ").strip()
     
-    print(f" the new sentence is : {sentence.replace(wordToReplace, word)}")
+    print(f"the new sentence is : {sentence.replace(wordToReplace, word)}")
     
 
 wordReplacement(str)

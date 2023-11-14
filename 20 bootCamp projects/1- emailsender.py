@@ -1,3 +1,13 @@
+####################################################################################
+# Author: Walid Omar
+# Brief: A Python script that uses the 'smtplib' library to send an email from a
+#        Gmail account to a specified receiver email. The script requires the user
+#        to provide their Gmail address and a generated password (for application-specific
+#        access) as sender credentials. The email message includes a subject and body.
+#        The script utilizes the 'EmailMessage' class for creating the email.
+####################################################################################
+
+
 from email.message import EmailMessage
 import ssl
 import smtplib
