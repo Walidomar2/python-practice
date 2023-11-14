@@ -3,7 +3,7 @@
 # Brief: A Python script that uses the 'qrcode' library to generate a QR code for a
 #        given text (usually a URL). The script defines a function, qrcodeGenerator,
 #        which takes the input text, creates a QRCode object with specified parameters,
-#        generates the QR code image, and saves it as "linkedin_qrcodeimg.png".
+#        generates the QR code image, and saves it.
 ####################################################################################
 
 import qrcode
@@ -21,10 +21,17 @@ def qrcodeGenerator(text):
     qr.make(fit = True)
     
     img = qr.make_image(fill_color ="black", back_color="white")
-    img.save("linkedin_qrcodeimg.png")
+    img.save("qrcodeimg.png")
+
+
+userURL = input("Enter your url: ").strip()
+
+if not isinstance(userURL, str):
+    raise ValueError("userInput must be a string.")
     
-    
-qrcodeGenerator("https://www.linkedin.com/in/ledooo2/")
+else:
+    qrcodeGenerator(userURL)
+
 
 
 
