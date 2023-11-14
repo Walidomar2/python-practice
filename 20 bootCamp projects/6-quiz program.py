@@ -1,5 +1,5 @@
 ####################################################################################
-# Author: [Your Name]
+# Author: Walid Omar
 # Brief: A simple quiz game. The script defines a dictionary
 #        containing quiz questions and answers. The user is prompted with each
 #        question, inputs their answer, and the script checks and scores the responses.
