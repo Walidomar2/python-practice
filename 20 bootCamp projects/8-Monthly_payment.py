@@ -1,4 +1,13 @@
 
+####################################################################################
+# Author: Walid Omar
+# Brief: A Python script for a monthly payment loan calculator. The script prompts
+#        the user to input the loan amount, annual interest rate (APR), and the
+#        number of years. It then calculates the monthly payment using the formula
+#        for a fixed-rate loan. The result is printed with two decimal places.
+####################################################################################
+
+
 print("This is monthly payment loan calculator \n")
 
 loanAmount = float(input("Enter the loan amount: "))
