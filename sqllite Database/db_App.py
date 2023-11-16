@@ -34,7 +34,8 @@ def idchecker(id):
     for item in idList:
         idResult.append(item[0])
     
-    print(idResult)
+    #print(idResult)
+    
     if id in idResult:
         print("User Found.. \n")
         return True
