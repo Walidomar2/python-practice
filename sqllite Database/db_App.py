@@ -1,5 +1,21 @@
 ##############################################################
-# python + SQLlite App
+"""
+Skills Database Mini Project
+---------------------------
+
+Author: Walid Omar 
+
+Description:
+This Python script provides a simple command-line interface to interact with a SQLite database storing user skills.
+Users can show, add, delete, or update skills in the database.
+
+Functions:
+- idchecker(id): Checks whether a user with the given ID exists in the database.
+- showSkills(id): Displays the skills and progress for a specific user.
+- addSkill(id): Adds a new skill with progress for a specific user.
+- deleteSkill(id): Deletes a skill for a specific user.
+- updateSkill(id): Updates the progress of an existing skill for a specific user.
+"""
 ##############################################################
 
 import sqlite3
