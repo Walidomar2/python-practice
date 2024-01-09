@@ -33,7 +33,7 @@ user_input = ""
 
 while user_input != "exit":
     user_input = input(
-        "Enter a list of days:unit with comma separated: ")
+        "Enter a list of days:unit with comma separated: ")  #EX==> 40:hours, 30:minuts, 20:seconds
 
     for element in user_input.split(", "):
         # print(num_of_days)
